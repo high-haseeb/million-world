@@ -47,7 +47,7 @@ const Pictures = () => {
         ]);
     }, [count]);
 
-    useMemo(() => {
+    useEffect(() => {
         if (meshRef.current) {
             positions.forEach((pos, i) => {
                 const matrix = new THREE.Matrix4();
